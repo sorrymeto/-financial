@@ -1,0 +1,85 @@
+<div class="leftShadow leftShadow-cftrade"></div>
+<div class="leftaside leftaside-cftrade">
+    <ul class="leftul">
+      <li class="index index-home">
+        <span class="icon"></span>
+        <a href="javascript:void(0)" data-json='{"href":"home","cd":"cftrade","name":"首页"}'>首页</a>
+      </li>
+        <li class="index index-search">
+            <span class="icon"></span>
+            <p class="cftrade-p">查询</p>
+            <ul class="inner-ul">
+                <li><a href="javascript:void(0)" data-json='{"href":"myCustomer","cd":"cftrade","name":"我的客户"}'>我的客户</a></li>
+                <li><a href="javascript:void(0)" data-json='{"href":"accountProgress","cd":"cftrade","name":"开户进度"}'>开户进度</a></li>
+                <li><a href="javascript:void(0)" data-json='{"href":"appointment","cd":"cftrade","name":"预约客户"}'>预约客户</a></li>
+                <li><a href="javascript:void(0)" data-json='{"href":"tradeData","cd":"cftrade","name":"交易数据"}'>交易数据</a></li>
+                <li><a href="javascript:void(0)" data-json='{"href":"modal-open","cd":"cftrade","name":"开户模版统计"}'>开户模版统计</a></li>
+                <li><a href="javascript:void(0)" data-json='{"href":"myCode","cd":"cftrade","name":"我的二维码"}'>我的二维码</a></li>
+                <li><a href="javascript:void(0)" data-json='{"href":"performance","cd":"cftrade","name":"我的业绩"}'>我的业绩</a></li>
+                <li><a href="javascript:void(0)" data-json='{"href":"myChannel","cd":"cftrade","name":"我的渠道"}'>我的渠道</a></li>
+            </ul>
+            <b></b>
+        </li>
+        <li class="index index-dynamic">
+            <span class="icon"></span>
+            <a href="javascript:void(0)" data-json='{"href":"customer-dynamic","cd":"cftrade","name":"客户动态"}'>客户动态</a>
+        </li>
+        <li class="index index-work">
+            <span class="icon"></span>
+            <p class="cftrade-p">日常工作</p>
+            <ul class="inner-ul">
+                <li><a href="javascript:void(0)" data-json='{"href":"modal-maintain","cd":"cftrade","name":"开户模版维护"}'>开户模版维护</a></li>
+            </ul>
+            <b></b>
+        </li>
+        <li class="index index-channel">
+            <span class="icon"></span>
+            <a href="javascript:void(0)" data-json='{"href":"channel-account","cd":"cftrade","name":"账户角色创建"}'>账户角色创建</a>
+        </li>
+        <li class="index index-personal">
+            <span class="icon"></span>
+            <a href="javascript:void(0)" data-json='{"href":"personal","cd":"cftrade","name":"个人中心"}'>个人中心</a>
+        </li>
+    </ul>
+</div>
+<script_add>
+
+</script_add>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //点击含有二级li的p的效果
+        var href = window.location.href;
+        $(".leftul>li>p").each(function () {
+            var flag = 0;
+            $(this).click(function () {
+                if (!flag) {
+                    $(this).siblings("ul").slideDown(200);
+                    $(this).parent().find("p").addClass("current");
+                    $(this).parent().find("b").addClass("current");
+                    $(this).parent().addClass("current");
+                    flag = 1;
+                } else {
+                    $(this).parent().find("ul").slideUp(200);
+                    $(this).parent().find("p").removeClass("current");
+                    $(this).parent().find("b").removeClass("current");
+                    $(this).parent().removeClass("current");
+                    flag = 0;
+                }
+            });
+        });
+        //点击没有二级li的一级li的效果
+        var $aloneLi = $(".leftul>li").not(".leftul>li:has('li')");
+        $aloneLi.each(function() {
+            var src = $(this).find("a").attr("href");
+            if(href.indexOf(src) != -1) {
+                $(this).addClass('active');
+            }
+        });
+    });
+    $(".index a").click(function () {
+            var href = $(this).data("json").href;
+            var name = $(this).data("json").name;
+            var cd = $(this).data("json").cd;
+            go_url(href,cd,name);
+    })
+</script>

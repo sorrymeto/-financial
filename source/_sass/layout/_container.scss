@@ -1,0 +1,91 @@
+/**
+ * Wrapper
+ */
+ .container {
+  @include clearfix;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  margin-top: 76px;
+  .credit-inner {
+    background: #fff;
+  }
+  .ui-wrap {
+    position: relative;
+    margin-left: 150px;
+    padding: 15px;
+    &.ui-wrap-cftrade {
+      margin-left: 200px;
+      padding: 0;
+      .nav-cftrade {
+        border-bottom: 4px solid #3d94e4;
+        background-color: white;
+        padding-top: 13px;
+        ul {
+          height: 36px;
+          margin-left: 19px;
+          li {
+            cursor: pointer;
+            display:inline-block;
+            text-align: center;
+            height: 36px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            line-height: 42px;
+            border-radius: 4px 4px 0 0;
+            max-width: 104px;
+            min-width: 98px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            &.active {
+              background-color: #3d94e4;
+              color: white;
+              position:relative;
+              .icon-close {
+                background: url("../images/cftrade/close-nav.png")4px 4px no-repeat;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                right: 1px;
+                top: 1px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        &.nav-cfrobot {
+          ul {
+            li {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ui-content {
+    .main-content {
+      position: relative;
+      padding: 20px;
+      margin-bottom: 20px;
+      height: auto;
+      &.no-back {
+        background: #fff;
+      }
+      &.no-margin-bottom {
+        margin-bottom: 0px;
+      }
+    }
+    .border-content {
+      border: 1px solid #f0f4fb;
+      padding: 15px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+  }
+   &.container-cftrade {
+     margin-top: 62px;
+   }
+}

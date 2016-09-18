@@ -1,0 +1,34 @@
+.icon {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: -3px;
+}
+
+.icon-ok-circle,
+.icon-remove-circle {
+  width: 26px;
+  height: 26px;
+  background: url(../images/tip2-icon.png) 0 0 no-repeat;
+}
+
+.icon-remove-circle {
+  background-position: -40px 0;
+}
+.icon-collect {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/cftrade/collect.png');
+  &.active {
+    background-image: url('../images/cftrade/collect-active.png');
+  }
+}
+.icon-message {
+  cursor: pointer;
+  width: 24px;
+  height: 26px;
+  background-image: url('../images/cftrade/message.png');
+  &.active {
+    background-image: url('../images/cftrade/message-active.png');
+  }
+}

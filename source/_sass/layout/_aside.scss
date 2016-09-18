@@ -1,0 +1,472 @@
+.leftaside {
+  position: relative;
+  float: left;
+  width: 150px;
+  padding-top: 10px;
+  &.leftaside-cftrade {
+    background: #f0efee;
+    width: 200px;
+    .leftul li {
+      .inner-ul {
+        background-color: #e9eeef;
+        li {
+          a {
+            color: #646e7c;
+            margin-left: 25px;
+            margin-top: 0;
+            padding: 12px 0;
+            &.active {
+              color: #e33448;
+            }
+          }
+        }
+      }
+      b {
+        top: 18px;
+        &.current {
+          background: url("../images/cftrade/show-ul.png") no-repeat;
+        }
+      }
+    }
+  }
+  .leftul {
+    li {
+      position: relative;
+      p {
+        position: relative;
+        padding-left: 50px;
+        line-height: 45px;
+        z-index: 10;
+        color: #b0b0b0;
+        cursor: pointer;
+        &.cftrade-p {
+          color: #64696c;
+          padding-left: 65px;
+          line-height: 38px;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          &.current {
+            border-left: 5px solid $theme-color;
+            color: $theme-color;
+            padding-left: 60px;
+          }
+        }
+      }
+      b {
+        position: absolute;
+        right: 20px;
+        top: 23px;
+        width: 9px;
+        height: 5px;
+        vertical-align: middle;
+        background: url('../images/cftrade/show-up.png') 0 0  no-repeat;
+        &.current {
+          background: url('../images/cftrade/show-up.png') 0 0 no-repeat;
+        }
+      }
+      small {
+        position: absolute;
+        right: 5px;
+        top: 17px;
+        display: inline-block;
+        color: #fff;
+        background: #ff5776;
+        font-size: 12px;
+        width: 32px;
+        height: 18px;
+        line-height: 18px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      a {
+        display: block;
+        font-size: 14px;
+        color: #646d7c;
+        margin-left: 20px;
+        padding: 19px 0 18px 45px;
+      }
+      &.active {
+        a {
+          background: #fff;
+          color: #12171d;
+          border-left: 5px solid #3ecacb;
+        }
+      }
+      .icon {
+        position: absolute;
+        display: inline-block;
+        top: 17px;
+        left: 25px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/aside-ico.png);
+        background-repeat: no-repeat;
+        background-position: -9999px -9999px;
+      }
+      .inner-ul {
+        display: none;
+        li {
+          text-align: left;
+          text-indent: 35px;
+          a {
+            font-size: 12px;
+            display: block;
+            padding: 4px 0px;
+            margin: 5px 0px 0px 20px;
+          }
+          &.active {
+            a {
+              background: #fff;
+              color: #12171d;
+              border: none;
+            }
+          }
+        }
+      }
+      &.index-home {
+        .icon {
+          height: 30px;
+          width: 30px;
+          top: 15px;
+          left: 15px;
+          background-image: url(../images/cftrade/home.png);
+        }
+        &.current {
+          .icon {
+            background-image: url(../images/cftrade/home-active.png);
+          }
+        }
+      }
+      &.index-search {
+        .icon {
+          height: 30px;
+          width: 30px;
+          top: 4px;
+          left: 15px;
+          background-image: url(../images/cftrade/search-cftrade.png);
+        }
+        &.current {
+          .icon {
+            background-image: url(../images/cftrade/search-cftrade-active.png);
+          }
+        }
+      }
+      &.index-personal {
+        .icon {
+          height: 27px;
+          width: 27px;
+          top: 15px;
+          left: 15px;
+          background-image: url(../images/cftrade/personal.png);
+        }
+        &.current {
+          .icon {
+            background-image: url(../images/cftrade/personal-active.png);
+          }
+        }
+      }
+      &.index-channel {
+        .icon {
+          height: 27px;
+          width: 29px;
+          top: 15px;
+          left: 15px;
+          background-image: url(../images/cftrade/channel.png);
+        }
+        &.current {
+          .icon {
+            background-image: url(../images/cftrade/channel-active.png);
+          }
+        }
+      }
+      &.index-dynamic {
+        .icon {
+          height: 27px;
+          width: 30px;
+          top: 15px;
+          left: 15px;
+          background-image: url(../images/cftrade/dynamic.png);
+        }
+        &.current {
+          .icon {
+            background-image: url(../images/cftrade/dynamic-active.png);
+          }
+        }
+      }
+      &.index-work {
+        .icon {
+          height: 30px;
+          width: 30px;
+          top: 4px;
+          left: 15px;
+          background-image: url(../images/cftrade/work.png);
+        }
+        &.current {
+          .icon {
+            background-image: url(../images/cftrade/work-active.png);
+          }
+        }
+      }
+    }
+    li.index {
+      .icon {
+        background-position: 0 0;
+      }
+      &.active {
+        .icon {
+          background-position: -38px 0;
+        }
+      }
+    }
+    li.announcement {
+      .icon {
+        background-position: 0 -22px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -22px;
+        }
+      }
+    }
+    li.vedio-validate {
+      .icon {
+        background-position: 0 -45px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -45px;
+        }
+      }
+    }
+    li.vedio-upload {
+      .icon {
+        background-position: 0 -68px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -68px;
+        }
+      }
+    }
+    li.certificate {
+      .icon {
+        background-position: 0 -91px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -91px;
+        }
+      }
+    }
+    li.open-verify {
+      .icon {
+        background-position: 0 -114px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -114px;
+        }
+      }
+    }
+    li.open-recheck {
+      .icon {
+        background-position: 0 -136px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -136px;
+        }
+      }
+    }
+    li.business-search,
+    li.business-online {
+      .icon {
+        margin-top: -2px;
+        background-position: 0 -159px;
+      }
+    }
+    li.business-operation {
+      .icon {
+        margin-top: -2px;
+        background-position: 0 -251px;
+      }
+    }
+    li.operation-analysis,
+    li.online-analysis,
+    li.mall-analysis {
+      .icon {
+        margin-top: -2px;
+        background-position: 0 -275px;
+      }
+    }
+    li.marketing-channels {
+      .icon {
+        margin-top: -2px;
+        background-position: 0 -205px;
+      }
+    }
+    li.open-sets {
+      .icon {
+        margin-top: -3px;
+        background-position: 0 -297px;
+      }
+    }
+    li.para-sets {
+      .icon {
+        margin-top: -3px;
+        background-position: 0 -228px;
+      }
+    }
+    li.system-parameter {
+      .icon {
+        background-position: 0 -182px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -182px;
+        }
+      }
+    }
+    li.online-sets {
+      .icon {
+        margin-top: -3px;
+        background-position: 0 -320px;
+      }
+    }
+    li.mall-product {
+      .icon {
+        margin-top: -2px;
+        background-position: 0 -344px;
+      }
+    }
+    li.mall-sales {
+      .icon {
+        margin-top: -2px;
+        background-position: 0 -367px;
+      }
+    }
+    li.mall-sets {
+      .icon {
+        margin-top: -3px;
+        background-position: 0 -390px;
+      }
+    }
+    li.e-record {
+      .icon {
+        margin-top: -2px;
+        background-position: 0 -413px;
+      }
+    }
+    li.institution {
+      .icon {
+        margin-top: -2px;
+        background-position: 0 -597px;
+      }
+    }
+    li.processes {
+      .icon {
+        background-position: 0 -435px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -435px;
+        }
+      }
+    }
+    li.jz {
+      .icon {
+        left: 10px;
+        top: 16px;
+        width: 19px;
+        height: 20px;
+        background: url('../images/aside-jz.png') center no-repeat;
+      }
+    }
+    li.check {
+      .icon {
+        background-position: 0 -459px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -459px;
+        }
+      }
+    }
+    li.channel-list {
+      .icon {
+        background-position: 0 -482px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -482px;
+        }
+      }
+    }
+    li.channel-manage {
+      .icon {
+        background-position: 0 -505px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -505px;
+        }
+      }
+    }
+    li.department {
+      .icon {
+        background-position: 0 -643px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -643px;
+        }
+      }
+    }
+    li.bank {
+      .icon {
+        background-position: 0 -620px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -620px;
+        }
+      }
+    }
+    li.commission-template {
+      .icon {
+        background-position: 0 -528px;
+      }
+      &.active {
+        .icon {
+          background-position: -38px -528px;
+        }
+      }
+    }
+    li.statistics {
+      .icon {
+        margin-top: -3px;
+        background-position: 0 -550px;
+      }
+    }
+    li.commission {
+      .icon {
+        margin-top: -3px;
+        background-position: 0 -573px;
+      }
+    }
+  }
+}
+
+.leftShadow {
+  background: #3a3d42 url('../images/back.png') right top repeat-y;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 150px;
+  min-height: 800px;
+  &.leftShadow-cftrade {
+    background: #f0efee;
+    width: 200px;
+  }
+}

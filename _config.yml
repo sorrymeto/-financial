@@ -1,0 +1,10 @@
+# Site settings
+encoding: UTF-8
+author: ld
+email: luodan@cairenhui.com
+
+# Build settings
+source: source
+destination: public
+sass:
+    sass_dir: _sass

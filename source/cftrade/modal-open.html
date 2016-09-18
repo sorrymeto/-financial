@@ -1,0 +1,87 @@
+---
+title: 开户模版统计
+layout: default-cftrade
+---
+<script type="text/javascript" src="/javascript/cftrade/modal-open.js"></script>
+<div class="main-content modal-open">
+    <div class="task-search clearfix1">
+        <button class="btn-fill btn-lg magnifier" href="#"></button>
+        <dl class="search-dl">
+            <dd>
+        <span>
+          <select name="" id="model_list" class="diy-select">
+              <option selected="" value="1">全部开户模版</option>
+          </select>
+        </span>
+            </dd>
+        </dl>
+        <dl class="search-dl">
+            <dd>
+        <span>
+          <select name="" id="part_list" class="diy-select">
+              <option selected="" value="1">全部营业部</option>
+          </select>
+        </span>
+            </dd>
+        </dl>
+    </div>
+    <div class="main-table clearfix1">
+        <table width="100%" cellpadding="0" cellspacing="0" class="data-table">
+            <thead>
+            <tr>
+                <th width="8%">开户模版</th>
+                <th width="7%">营业部</th>
+                <th width="10%" class="select-upordown">注册总数</th>
+                <th width="10%" class="select-upordown">今日注册数</th>
+                <th width="10%" class="select-upordown">提交总数</th>
+                <th width="9%" class="select-upordown">今日提交数</th>
+                <th width="10%" class="select-upordown down" data-id="open_time">客户总数</th>
+                <th width="9%" class="select-upordown">今日新增客户数</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>万2.5渠道</td>
+                <td>杭州营业部</td>
+                <td>134,462</td>
+                <td>462</td>
+                <td>1,462</td>
+                <td>432</td>
+                <td>123,432</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>万2.5渠道</td>
+                <td>杭州营业部</td>
+                <td>24,332</td>
+                <td>32</td>
+                <td>2,032</td>
+                <td>22</td>
+                <td>122,322</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>万2.5渠道</td>
+                <td>杭州营业部</td>
+                <td>94,304</td>
+                <td>104</td>
+                <td>2,104</td>
+                <td>53</td>
+                <td>23,153</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>万2.5渠道</td>
+                <td>杭州营业部</td>
+                <td>214,973</td>
+                <td>973</td>
+                <td>22,973</td>
+                <td>987</td>
+                <td>782,987</td>
+                <td>120</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% include component/pagenav-cf.html %}

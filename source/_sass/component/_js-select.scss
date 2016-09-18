@@ -1,0 +1,57 @@
+span.js-select {
+  color: #4D4D4D;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+  padding: 0px 10px;
+  height: 28px;
+  width: 106px;
+  line-height: 28px;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 0;
+  text-align: left;
+  i.arrow {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    vertical-align: middle;
+    background: url(../images/icolist.png) -80px -30px no-repeat;
+  }
+}
+.js-option {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+  background-color: #e1e6ef;
+  border: 1px solid #e1e6ef;
+  zoom: 1;
+  margin-top: 2px;
+  li {
+    line-height: 35px;
+    padding: 0 10px;
+    white-space: nowrap;
+    font-size: 12px;
+    cursor: pointer;
+    &.active {
+      background-color: #9ba0a8;
+      color: #fff;
+    }
+    &.selected {
+      background-color: #9ba0a8;
+      color: #fff;
+    }
+  }
+}

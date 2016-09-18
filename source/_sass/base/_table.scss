@@ -1,0 +1,80 @@
+.main-table {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  .data-table {
+    border: 1px solid #f0f4fb;
+    font-size: 13px;
+    thead {
+      th {
+        height: 26px;
+        box-sizing: border-box;
+        background-color: #e8eff2;
+        color: #646e7c;
+        text-align: right;
+        padding-right: 20px;
+        padding-left: 20px;
+        &.center-align {
+          text-align: center;
+        }
+        &.left-align {
+          text-align: left;
+        }
+        &.select-upordown {
+          padding-right: 20px;
+          background-image: url("../images/cftrade/select-upordown.png");
+          background-position: 95% center;
+          background-repeat: no-repeat;
+          cursor: pointer;
+          &.up {
+            background-image: url("../images/cftrade/up.png");
+          }
+          &.down {
+            background-image: url("../images/cftrade/down.png");
+          }
+        }
+      }
+      th:first-child {
+        text-align: left;
+      }
+      th:last-child {
+        text-align: right;
+      }
+    }
+    tbody {
+      td {
+        border-bottom: 1px solid #f1f5f8;
+        text-align: right;
+        padding: 17px 20px;
+        font-weight: normal;
+        color: #333333;
+        &.center-align {
+          text-align: center;
+        }
+        &.left-align {
+          text-align: left;
+        }
+        .text-time {
+          color: #b3b3b3;
+        }
+        img {
+          float: left;
+        }
+        .img-text {
+          float: left;
+          margin-left: 10px;
+        }
+        input[type="text"] {
+          margin: 0;
+          width: 73px;
+        }
+      }
+      td:first-child {
+        text-align: left;
+      }
+      td:last-child {
+        text-align: right;
+      }
+    }
+  }
+}
